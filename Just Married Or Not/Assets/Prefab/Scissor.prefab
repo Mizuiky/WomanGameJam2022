@@ -146,5 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edef24d56c643db4cb08945b790b8936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 28
-  _scissor: {fileID: 6881633527919116535}
+  _speed: 20
+  _rotationSpeed: 25
+  _timeToDestroy: 3
+  _degrees: 30

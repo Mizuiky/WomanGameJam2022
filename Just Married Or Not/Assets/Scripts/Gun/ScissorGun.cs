@@ -22,6 +22,7 @@ public class ScissorGun : MonoBehaviour
             projectil.transform.position = _scissorPosition.position;
 
             var newScissor = projectil.GetComponent<Scissor>();
+            newScissor.Init(Player.Instance.GetSide());
         }     
     }
 

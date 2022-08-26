@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Singleton<Player>
 {
     [SerializeField]
     private float _playerSpeed;
@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     private float _vertical;
 
     private bool _canFlip = false;
-    
 
     void Update()
     {
@@ -57,8 +56,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    public float GetSide()
     {
-
+        return transform.localScale.x;
     }
 }
