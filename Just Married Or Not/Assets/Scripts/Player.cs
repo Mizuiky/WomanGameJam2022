@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core.Singleton;
 
 public class Player : Singleton<Player>
 {
@@ -13,10 +14,14 @@ public class Player : Singleton<Player>
     [SerializeField]
     private Animator _animator;
 
+    #region Private Fields
+
     private float _horizontal;
     private float _vertical;
 
     private bool _canFlip = false;
+
+    #endregion
 
     void Update()
     {
