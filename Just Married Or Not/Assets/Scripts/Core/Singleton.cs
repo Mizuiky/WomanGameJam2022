@@ -2,23 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T :MonoBehaviour
+namespace Core.Singleton
 {
-    public static T Instance;
-
-    void Start()
+    public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        if (Instance == null)
-            Instance = GetComponent<T>();
-        else
+        public static T Instance;
+
+        void Awake()
         {
-            Destroy(this.gameObject);
+            if (Instance == null)
+                Instance = GetComponent<T>();
+            else
+            {
+                Destroy(Instance);
+            }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

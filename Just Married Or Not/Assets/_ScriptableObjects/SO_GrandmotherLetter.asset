@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba8900c88b862b41bb804501408d85a, type: 3}
+  m_Name: SO_GrandmotherLetter
+  m_EditorClassIdentifier: 
+  _dialog:
+  - _characterName: "[ Carta da av\xF3 ]"
+    _image: {fileID: 0}
+    _animator: {fileID: 0}
+    _text: "Olivia, \n\nquando voc\xEA estiver lendo esta carta, eu j\xE1 terei partido.
+      Meu tempo aqui j\xE1 se esgotou, e eu aproveitei ao m\xE1ximo cada segundo
+      ao seu lado, minha neta."
+  - _characterName: "[ Carta da av\xF3 ]"
+    _image: {fileID: 0}
+    _animator: {fileID: 0}
+    _text: Quando eu tinha a sua idade, eu estava gravida de poucos meses e me casando
+      contra a minha vontade.
+  - _characterName: "[ Carta da av\xF3 ]"
+    _image: {fileID: 0}
+    _animator: {fileID: 0}
+    _text: "Daria tudo para voltar naquele dia e poder fazer diferente. Minha vida
+      nao foi facil, seu av\xF3 n\xE3o era um homem bom."
+  - _characterName: "[ Carta da av\xF3 ]"
+    _image: {fileID: 0}
+    _animator: {fileID: 0}
+    _text: "Ja que n\xE3o consigo mais voltar no tempo, esta carta pode fazer com
+      que voc\xEA volte por mim."
+  _endPrefab: {fileID: 433463882568633556, guid: 1aed56423fb8aa14591097d2428aba6c, type: 3}
