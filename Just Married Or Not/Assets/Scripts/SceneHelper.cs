@@ -6,7 +6,15 @@ using UnityEngine.UI;
 
 public class SceneHelper : MonoBehaviour
 {
-    public Image image;
+    [SerializeField]
+    private Image image;
+
+    [SerializeField]
+    private float timeToOpenNextScene;
+
+    [SerializeField]
+    private string sceneToOpen;
+
     public void OpenSceneByName(string name)
     {
         SceneManager.LoadScene(name);
@@ -21,8 +29,8 @@ public class SceneHelper : MonoBehaviour
     {
         image.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(timeToOpenNextScene);
 
-        OpenSceneByName("SCN_GamePlay");
+        OpenSceneByName(sceneToOpen);
     }
 }
